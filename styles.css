@@ -1,0 +1,262 @@
+/* styles.css */
+
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    background: #000;
+    overflow-x: hidden;
+}
+
+/* Animated Background */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #ff0099, #493240, #00ffff);
+    background-size: 600% 600%;
+    animation: gradientAnimation 30s ease infinite;
+    z-index: -1;
+}
+
+/* Keyframes for Background Animation */
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 100px 20px 60px;
+}
+
+header .profile-pic {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 5px solid #fff;
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+header h2 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+header p {
+    font-size: 1.1em;
+}
+
+/* Navigation */
+nav {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Sections */
+section {
+    padding: 60px 20px;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+}
+
+section p {
+    max-width: 800px;
+    margin: 0 auto 20px;
+    line-height: 1.6;
+    font-size: 1.1em;
+}
+
+/* Portfolio Items */
+.portfolio-item {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.portfolio-item h3 {
+    margin-bottom: 15px;
+    font-size: 1.8em;
+}
+
+.portfolio-item p {
+    margin-bottom: 15px;
+}
+
+/* Updated Button Styles */
+.button {
+    display: inline-block;
+    background-color: #ff0099;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 30px;
+    margin: 20px auto;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 5px 15px rgba(255, 0, 153, 0.3);
+}
+
+
+/* Center the buttons */
+.button {
+    display: block;
+    text-align: center;
+}
+
+/* Hover Effect */
+.button:hover {
+    background-color: #ff66cc;
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(255, 0, 153, 0.4);
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    header h2 {
+        font-size: 1.2em;
+    }
+
+    section h2 {
+        font-size: 2em;
+    }
+
+    .portfolio-item {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 80px 15px 40px;
+    }
+
+    header .profile-pic {
+        width: 120px;
+        height: 120px;
+    }
+
+    .button {
+        padding: 10px 20px;
+        font-size: 0.9em;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        margin: 0;
+    }
+
+    nav a {
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+    }
+}
+.map-container {
+    max-width: 800px;
+    margin: 20px auto;
+    border: 5px solid #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 450px;
+    border: 0;
+}
+
+.mini-map {
+    width: 300px;
+    height: 200px;
+    margin: 20px auto;
+    border: 5px solid #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.mini-map iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* Updated CSS for Profile Picture */
+.profile-pic {
+    width: 300px; /* Increased from 150px to 300px */
+    height: 300px; /* Increased from 150px to 300px */
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 5px solid #fff;
+}
+/* Styles for About Me Pictures */
+.about-pic {
+    display: block;
+    max-width: 25%;
+    height: auto;
+    margin: 30px auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(255, 0, 153, 0.3);
+}
