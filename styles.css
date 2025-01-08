@@ -254,7 +254,7 @@ footer p {
 /* Styles for About Me Pictures */
 .about-pic {
     display: block;
-    max-width: 25%;
+    max-width: 70%;
     height: auto;
     margin: 30px auto;
     border-radius: 10px;
@@ -297,5 +297,26 @@ footer p {
     }
     50% {
         transform: translateY(-10px);
+    }
+}
+
+.skill-item {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+    padding: 15px;
+    transition: transform 0.2s;
+    color: #000;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.skill-item:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+    .skill-item {
+        padding: 10px;
     }
 }
