@@ -275,9 +275,7 @@ footer p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    animation: float 3s ease-in-out infinite;
+    
 }
 
 .language-box img {
@@ -319,4 +317,24 @@ footer p {
     .skill-item {
         padding: 10px;
     }
+}
+
+.linkedin-button {
+    background-color: #0077b5;
+    color: #fff;
+}
+
+.github-button {
+    background-color: #333;
+    color: #fff;
+}
+
+.LetsWorkTogether p {
+    font-size: large;
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+    border-radius: 8px;
 }
